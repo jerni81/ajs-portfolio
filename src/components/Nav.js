@@ -9,7 +9,6 @@ const Nav = props => {
         to="bio"
         spy={true}
         smooth={true}
-        offset={-70}
         duration= {500}
       >
         Bio
@@ -19,7 +18,6 @@ const Nav = props => {
         to="projects"
         spy={true}
         smooth={true}
-        offset={-70}
         duration= {500}
       >
         Projects
@@ -29,7 +27,6 @@ const Nav = props => {
         to="contact"
         spy={true}
         smooth={true}
-        offset={-70}
         duration= {500}
       >
         Contact
