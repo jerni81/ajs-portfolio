@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Projects = props => {
   return (
     <div className="projects">
-      <h1>Projects</h1>
+      <h1><u>Projects</u></h1>
     </div>
   );
 };

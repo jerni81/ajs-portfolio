@@ -42,36 +42,44 @@
 
 .bio-wrapper {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-}
-
-.bio-pic {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-template-columns: repeat(10, 8vw);
+  grid-template-rows: repeat(10, 7vh);
   border: 1px solid black;
 }
 
 .bio-p {
   grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  border: 1px solid black;
-  height: 30vh;
+  grid-column-end: 10;
+  grid-row-start: 2;
+  grid-row-end: 5;
   text-align: center;
+  place-self: center;
+}
+
+#stack {
+  grid-column-start: 2;
+  grid-column-end: 10;
+  grid-row-start: 6;
+  grid-row-end: 8;
+  place-self: center;
 }
 
 .bio-tech {
   grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  border: 1px solid black;
-  height: 30vh;
+  grid-column-end: 10;
+  grid-row-start: 8;
+  grid-row-end: 10;
   text-align: center;
+  place-self: center;
+}
+
+#resume {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 10;
+  grid-row-end: 11;
+  border: 1px solid orange;
+  place-self: center stretch;
 }
 
 
@@ -86,7 +94,9 @@
 
 .contact {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   height: 80vh;
   border: 1px solid green;
   background-color: rgb(212, 211, 215);
