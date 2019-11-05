@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Knewave&display=swap');
+
 .app {
   display: flex;
   flex-direction: column;
@@ -16,6 +18,16 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: rgb(186, 179, 179);
   height: 10vh;
+  font-family: 'Knewave', cursive;
+}
+
+.link {
+  transition: transform .2s;
+}
+
+.link:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .intro {
@@ -34,10 +46,13 @@
   flex-direction: column;
   align-items: center;
   height: 90vh;
-  border: 1px solid red;
   background-color: rgb(212, 211, 215);
   padding-top: 10vh;
   margin-top: -10vh;
+}
+
+h1 {
+  font-family: 'Knewave', cursive;
 }
 
 .bio-wrapper {
@@ -46,17 +61,9 @@
   grid-template-rows: repeat(10, 7vh);
 }
 
-.bio-pic {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 8;
-  place-self: center;
-}
-
 .bio-p {
-  grid-column-start: 4;
-  grid-column-end: 11;
+  grid-column-start: 2;
+  grid-column-end: 10;
   grid-row-start: 2;
   grid-row-end: 5;
   text-align: center;
@@ -64,17 +71,17 @@
 }
 
 #stack {
-  grid-column-start: 4;
-  grid-column-end: 11;
-  grid-row-start: 6;
-  grid-row-end: 7;
+  grid-column-start: 2;
+  grid-column-end: 10;
+  grid-row-start: 7;
+  grid-row-end: 8;
   place-self: center;
 }
 
 .bio-tech {
-  grid-column-start: 4;
-  grid-column-end: 11;
-  grid-row-start: 7;
+  grid-column-start: 2;
+  grid-column-end: 10;
+  grid-row-start: 8;
   grid-row-end: 9;
   place-self: center;
 }
@@ -91,7 +98,6 @@
   display: flex;
   justify-content: center;
   height: 90vh;
-  border: 1px solid blue;
   background-color: rgb(212, 211, 215);
   padding-top: 10vh;
 }
@@ -101,9 +107,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 80vh;
-  background-color: rgb(212, 211, 215);
+  height: 90vh;
+  background-image: url('https://i.imgur.com/B81LF7y.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 10vh;
+  margin-bottom: -10vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .footer {
@@ -116,4 +128,5 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: rgb(186, 179, 179);
   height: 10vh;
+  font-family: 'Knewave', cursive;
 }

@@ -5,6 +5,7 @@ const Nav = props => {
   return (
     <div className="nav">
       <Link
+        className="link"
         activeClass="active"
         to="bio"
         spy={true}
@@ -14,6 +15,7 @@ const Nav = props => {
         Bio
       </Link>
       <Link
+        className="link"
         activeClass="active"
         to="projects"
         spy={true}
@@ -23,6 +25,7 @@ const Nav = props => {
         Projects
       </Link>
       <Link
+        className="link"
         activeClass="active"
         to="contact"
         spy={true}

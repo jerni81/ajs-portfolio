@@ -10,13 +10,14 @@ const Footer = props => {
           <FontAwesomeIcon icon={faLinkedin} size="2x"/>
         </a>
         <Link
+          className="link"
           activeClass="active"
           to="intro"
           spy={true}
           smooth={true}
           duration= {500}
         >
-          @AJJernigan
+          AJJernigan &copy;2019
         </Link>
         <a target="_blank" href="https://github.com/jerni81">
           <FontAwesomeIcon icon={faGithub} size="2x"/>
