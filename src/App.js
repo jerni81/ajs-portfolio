@@ -5,7 +5,6 @@ import Bio from './components/Bio'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import { Route } from "react-router-dom";
 import './App.css';
 
 function App() {
@@ -13,9 +12,9 @@ function App() {
     <div className="App">
       <Intro />
       <Nav />
-      <Route path="/bio" render={() => <Bio />} />
-      <Route path="/bio" render={() => <Projects />} />
-      <Route path="/bio" render={() => <Contact />} />
+      <Bio />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
   );
