@@ -13,7 +13,7 @@
   position: sticky;
   top: 0;
   width: 100%;
-  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: rgb(186, 179, 179);
   height: 10vh;
 }
@@ -44,12 +44,19 @@
   display: grid;
   grid-template-columns: repeat(10, 8vw);
   grid-template-rows: repeat(10, 7vh);
-  border: 1px solid black;
+}
+
+.bio-pic {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 8;
+  place-self: center;
 }
 
 .bio-p {
-  grid-column-start: 2;
-  grid-column-end: 10;
+  grid-column-start: 4;
+  grid-column-end: 11;
   grid-row-start: 2;
   grid-row-end: 5;
   text-align: center;
@@ -57,19 +64,18 @@
 }
 
 #stack {
-  grid-column-start: 2;
-  grid-column-end: 10;
+  grid-column-start: 4;
+  grid-column-end: 11;
   grid-row-start: 6;
-  grid-row-end: 8;
+  grid-row-end: 7;
   place-self: center;
 }
 
 .bio-tech {
-  grid-column-start: 2;
-  grid-column-end: 10;
-  grid-row-start: 8;
-  grid-row-end: 10;
-  text-align: center;
+  grid-column-start: 4;
+  grid-column-end: 11;
+  grid-row-start: 7;
+  grid-row-end: 9;
   place-self: center;
 }
 
@@ -78,10 +84,8 @@
   grid-column-end: 7;
   grid-row-start: 10;
   grid-row-end: 11;
-  border: 1px solid orange;
   place-self: center stretch;
 }
-
 
 .projects {
   display: flex;
@@ -98,7 +102,6 @@
   align-items: center;
   justify-content: flex-start;
   height: 80vh;
-  border: 1px solid green;
   background-color: rgb(212, 211, 215);
   padding-top: 10vh;
 }
@@ -110,7 +113,7 @@
   position: relative;
   bottom: 0;
   width: 100%;
-  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: rgb(186, 179, 179);
   height: 10vh;
 }
