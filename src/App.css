@@ -73,7 +73,32 @@ h1 {
   grid-template-rows: repeat(10, 7vh);
 }
 
-.bio-p {
+.statement {
+  height: 70px;
+  width: 70px;
+  background-color: black;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.shwStatement {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 7;
+  grid-row-end: 10;
+  display: none;
+}
+
+.statement:hover .shwStatement {
+  display : block;
+}
+
+/* .bio-p {
   grid-column-start: 2;
   grid-column-end: 10;
   grid-row-start: 2;
@@ -104,7 +129,7 @@ h1 {
   grid-row-start: 10;
   grid-row-end: 11;
   place-self: center stretch;
-}
+} */
 
 .projects {
   display: flex;

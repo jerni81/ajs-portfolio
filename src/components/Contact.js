@@ -1,20 +1,19 @@
-import React, {useState} from "react";
+import React, {useState, useCallback, useEffect} from "react";
 import { Link } from "react-router-dom";
+import axios from 'axios';
+
+const useInput = (initialState) => {
+  const [state, _setState] = useState(initialState)
+  const setState = useCallback(($htmlEl) => {
+    _setState($htmlEl.target.value)
+  }, [_setState])
+  return [state, setState]
+}
 
 const Contact = props => {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
-
-  const handleName = e => {
-      setName(e.target.value)
-  }
-  const handleEmail = e => {
-      setEmail(e.target.value)
-  }
-  const handleMessage = e => {
-      setMessage(e.target.value)
-  }
+  const [name, setName] = useInput('')
+  const [email, setEmail] = useInput('')
+  const [message, setMessage] = useInput('')
 
   return (
     <div className="contact">
@@ -25,13 +24,15 @@ const Contact = props => {
           name="name"
           type="text"
           placeholder="name"
-          onChange={handleName}
+          onChange={setName}
+          value={name}
         />
         <input
           name="email"
           type="email"
           placeholder="email"
-          onChange={handleEmail}
+          onChange={setEmail}
+          value={email}
         />
         <textarea
           name="message"
@@ -40,7 +41,8 @@ const Contact = props => {
           wrap="hard"
           id="message"
           placeholder="message"
-          onChange={handleMessage}
+          onChange={setMessage}
+          value={message}
         >
         </textarea>
         <input
