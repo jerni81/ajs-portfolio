@@ -13,6 +13,7 @@
   justify-content: space-around;
   align-items: center;
   position: sticky;
+  z-index: 2;
   top: 0;
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -67,29 +68,37 @@ h1 {
   font-family: 'Knewave', cursive;
 }
 
+h3 {
+  margin: 0 auto;
+}
+
 .bio-wrapper {
-  display: grid;
-  grid-template-columns: repeat(10, 8vw);
-  grid-template-rows: repeat(10, 7vh);
+  width: 70vw;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .statement {
-  height: 70px;
-  width: 70px;
-  background-color: black;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  place-self: center;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(186, 179, 179);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .shwStatement {
-  height: 200px;
-  width: 200px;
+  height: 50vh;
+  width: 70vw;
   background-color: red;
   display: none;
-  position: relative;
+  background-color: rgb(186, 179, 179);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
   z-index: 0;
 }
 
@@ -99,24 +108,24 @@ h1 {
 }
 
 .tech {
-  height: 70px;
-  width: 70px;
-  background-color: black;
-  grid-column-start: 5;
-  grid-column-end: 7;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  place-self: center;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(186, 179, 179);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .shwTech {
-  height: 200px;
-  width: 200px;
-  background-color: red;
+  height: 50vh;
+  width: 70vw;
+  background-color: blue;
   display: none;
-  position: relative;
+  background-color: rgb(186, 179, 179);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
   z-index: 0;
-  place-self: center;
 }
 
 .tech:hover .shwTech {
@@ -125,22 +134,23 @@ h1 {
 }
 
 .school {
-  height: 70px;
-  width: 70px;
-  background-color: black;
-  grid-column-start: 8;
-  grid-column-end: 10;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  place-self: center;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(186, 179, 179);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .shwSchool {
-  height: 200px;
-  width: 200px;
-  background-color: red;
+  height: 50vh;
+  width: 70vw;
+  background-color: green;
   display: none;
-  position: relative;
+  background-color: rgb(186, 179, 179);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
   z-index: 0;
 }
 
