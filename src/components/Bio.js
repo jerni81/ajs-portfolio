@@ -7,20 +7,16 @@ const Bio = props => {
       <h1><u>Bio</u></h1>
       <div className="bio-wrapper">
         <div className="statement">
+          <div className="shwStatement">
+          </div>
         </div>
-        <div id="stack">
+        <div className="tech">
+          <div className="shwTech">
+          </div>
         </div>
-        <div id="school">
-        </div>
-        <div id="pic">
-        </div>
-        <div className="shwStatement">
-        </div>
-        <div id="">
-        </div>
-        <div id="">
-        </div>
-        <div id="">
+        <div className="school">
+          <div className="shwSchool">
+          </div>
         </div>
       </div>
     </div>
