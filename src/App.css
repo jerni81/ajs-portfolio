@@ -161,10 +161,34 @@ h3 {
 
 .projects {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   height: 90vh;
   background-color: rgb(212, 211, 215);
   padding-top: 10vh;
+}
+
+.projectWrapper {
+  width: 80vw;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project {
+  background-color: rgb(186, 179, 179);
+  height: 300px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.projectPic {
+  height: 200px;
+  width: 220px;
 }
 
 .contact {

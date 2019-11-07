@@ -24,7 +24,8 @@ const Projects = props => {
 const display = cards && cards.map((d,i) => {
   return (
     <div className="project">
-    {d.name}
+    <h4><a target="_blank" href={d.link}>{d.name}</a></h4>
+    <img src={d.img} alt={d.name} className='projectPic'/>
     </div>
   )
 })
