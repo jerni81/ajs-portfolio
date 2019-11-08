@@ -1,5 +1,4 @@
 import React, {useState, useCallback, useEffect} from "react";
-import { Link } from "react-router-dom";
 import axios from 'axios';
 
 const useInput = (initialState) => {
@@ -11,9 +10,20 @@ const useInput = (initialState) => {
 }
 
 const Contact = props => {
+
   const [name, setName] = useInput('')
   const [email, setEmail] = useInput('')
   const [message, setMessage] = useInput('')
+
+  const getRes = async() => {
+    const data = await axios.get('/');
+      console.log('this is data', data);
+      return data
+  }
+
+  useEffect(()=>{
+    getRes()
+  })
 
   return (
     <div className="contact">

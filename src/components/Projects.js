@@ -1,5 +1,4 @@
 import React, { useState, useEffect} from "react";
-import { Link } from "react-router-dom";
 import axios from 'axios';
 
 
@@ -14,7 +13,8 @@ const Projects = props => {
       let project = {
       name: d.gsx$title.$t,
       link: d.gsx$link.$t,
-      img: d.gsx$image.$t
+      img: d.gsx$image.$t,
+      key: i
     }
     return project
     })
@@ -23,8 +23,8 @@ const Projects = props => {
 
 const display = cards && cards.map((d,i) => {
   return (
-    <div className="project">
-    <h4><a target="_blank" href={d.link}>{d.name}</a></h4>
+    <div className="project" key={i}>
+    <h4><a target="_blank" rel="noopener noreferrer" href={d.link}>{d.name}</a></h4>
     <img src={d.img} alt={d.name} className='projectPic'/>
     </div>
   )
