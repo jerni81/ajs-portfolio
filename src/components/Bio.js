@@ -18,18 +18,34 @@ const Bio = props => {
           <h3>Tech Stack</h3>
           <div className="shwTech shw">
             <u><h3>Tech Stack</h3></u>
-            <ul>
-              <li>React.js</li>
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>HTML</li>
-            </ul>
+            <div className="techList">
+              <ul>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>HTML</li>
+              </ul>
+              <ul>
+                <li>Git</li>
+                <li>SQL</li>
+                <li>Ruby on Rails</li>
+                <li>CSS</li>
+              </ul>
+            </div>
           </div>
         </div>
         <div className="school">
           <h3>Education</h3>
           <div className="shwSchool shw">
-            <u><h3>Education</h3></u>
+            <u><h3 id="schoolH3">Education</h3></u>
+            <div className="schoolList">
+              <b>General Assembly</b>
+              Software Engineering Imersive
+              <br/>
+              <br/>
+              <b>University of South Florida</b>
+              Bachelor in Organizational Communication
+            </div>
           </div>
         </div>
       </div>

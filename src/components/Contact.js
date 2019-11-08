@@ -21,8 +21,21 @@ const Contact = props => {
       return data
   }
 
+  const sendInfo = async() => {
+    const response = await axios.post('/message', {
+      name: 'fred',
+      lastName: 'flinstone'
+    })
+      .then(function (response) {
+      console.log(response);
+    })
+      .catch(function (error) {
+      console.log(error, 'wtf');
+    });
+  }
+
   useEffect(()=>{
-    getRes()
+    sendInfo()
   })
 
   return (
