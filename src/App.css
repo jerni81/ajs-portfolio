@@ -297,22 +297,7 @@ input {
   }
 }
 
-@media only screen and (max-width: 425px) {
-  .nav {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #navBio {
-    display: none;
-  }
-
-  #navProjects {
-    display: none;
-  }
-
+@media only screen and (max-width: 755px) {
   .projects {
     height: 250vh;
   }
@@ -334,6 +319,23 @@ input {
   .projectPic {
     height: 55vh;
     width: 75vw;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .nav {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #navBio {
+    display: none;
+  }
+
+  #navProjects {
+    display: none;
   }
 
   input {
