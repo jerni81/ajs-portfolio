@@ -12,7 +12,7 @@ const Nav = props => {
         smooth={true}
         duration= {500}
       >
-        Bio
+        <div id="navBio">Bio</div>
       </Link>
       <Link
         className="link"
@@ -22,7 +22,7 @@ const Nav = props => {
         smooth={true}
         duration= {500}
       >
-        Projects
+        <div id="navProjects">Projects</div>
       </Link>
       <Link
         className="link"
@@ -32,7 +32,7 @@ const Nav = props => {
         smooth={true}
         duration= {500}
       >
-        Contact
+        <div id="navContact">Contact</div>
       </Link>
     </div>
   );

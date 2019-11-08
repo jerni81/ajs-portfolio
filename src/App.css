@@ -95,15 +95,16 @@ h3 {
   height: 50vh;
   width: 70vw;
   background-color: red;
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgb(186, 179, 179);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: absolute;
-  z-index: 0;
+  z-index: -1;
 }
 
 .statement:hover .shwStatement {
-  display : block;
   z-index: 1;
 }
 
@@ -121,15 +122,17 @@ h3 {
   height: 50vh;
   width: 70vw;
   background-color: blue;
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgb(186, 179, 179);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: absolute;
-  z-index: 0;
+  z-index: -1;
 }
 
 .tech:hover .shwTech {
-  display : block;
+
   z-index: 1;
 }
 
@@ -147,15 +150,16 @@ h3 {
   height: 50vh;
   width: 70vw;
   background-color: green;
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgb(186, 179, 179);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   position: absolute;
-  z-index: 0;
+  z-index: -1;
 }
 
 .school:hover .shwSchool {
-  display : block;
   z-index: 1;
 }
 
@@ -178,6 +182,7 @@ h3 {
 
 .project {
   background-color: rgb(186, 179, 179);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 300px;
   width: 250px;
   display: flex;
@@ -265,4 +270,112 @@ input {
   background-color: rgb(186, 179, 179);
   height: 10vh;
   font-family: 'Knewave', cursive;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .project {
+    height: 260px;
+    width: 215px;
+  }
+
+  .projectPic {
+    height: 170px;
+    width: 207px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project {
+    height: 220px;
+    width: 180px;
+  }
+
+  .projectPic {
+    height: 140px;
+    width: 160px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .nav {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #navBio {
+    display: none;
+  }
+
+  #navProjects {
+    display: none;
+  }
+
+  .projects {
+    height: 250vh;
+  }
+
+  .projectWrapper {
+    width: 95vw;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .project {
+    height: 75vh;
+    width: 85vw;
+  }
+
+  .projectPic {
+    height: 55vh;
+    width: 75vw;
+  }
+
+  input {
+    width: 80vw;
+  }
+
+  #message {
+    width: 80vw;
+    height: 60px;
+  }
+
+  .bio {
+    height: 210vh;
+  }
+
+  .bio-wrapper {
+    width: 90vw;
+    height: 160vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .statement {
+    justify-content: center;
+  }
+
+  .shwStatement {
+    z-index: 1;
+  }
+
+  .shwTech {
+    z-index: 1;
+  }
+
+  .school {
+    justify-content: center;
+  }
+
+  .shwSchool {
+    z-index: 1;
+  }
+
 }
