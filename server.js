@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const port = 'https://git.heroku.com/shrouded-dawn-61127.git';
+const port = process.env.PORT || 5000;
 const { Message } = require('./models');
 
 
