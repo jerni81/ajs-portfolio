@@ -1,4 +1,4 @@
-import React, {useState, useCallback, useEffect} from "react";
+import React, {useState, useCallback} from "react";
 import axios from 'axios';
 
 const useInput = (initialState) => {
@@ -15,33 +15,20 @@ const Contact = props => {
   const [email, setEmail] = useInput('')
   const [message, setMessage] = useInput('')
 
-  const getRes = async() => {
-    const data = await axios.get('/');
-      console.log('this is data', data);
-      return data
-  }
-
-  const sendInfo = async() => {
-    const response = await axios.post('/message', {
-      name: 'fred',
-      lastName: 'flinstone'
+  let sendData = () => {
+    axios.post('/', {
+      name,
+      email,
+      message
     })
-      .then(function (response) {
-      console.log(response);
-    })
-      .catch(function (error) {
-      console.log(error, 'wtf');
-    });
+    .then(res => console.log('Data send', { name, email, message }))
+    .catch(err => console.log(err.data))
   }
-
-  useEffect(()=>{
-    sendInfo()
-  })
 
   return (
     <div className="contact">
       <h1><u>Contact</u></h1>
-      <form>
+      <form onSubmit={sendData}>
         <p>Have a question or want to work together?</p>
         <input
           name="name"
