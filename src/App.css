@@ -196,10 +196,10 @@ h3 {
 
 .projectWrapper {
   width: 80vw;
-  height: 60vh;
+  height: 80%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .carousel.carousel-slider {
@@ -211,27 +211,13 @@ ul.control-dots {
 }
 
 ul.thumbs.animated {
-  padding: 10px;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 li.thumb {
   margin: 6px;
-}
-
-.project {
-  background-color: rgb(186, 179, 179);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  height: 300px;
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.projectPic {
-  height: 200px;
-  width: 220px;
 }
 
 .contact {

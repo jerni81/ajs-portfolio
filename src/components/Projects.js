@@ -16,6 +16,8 @@ const Projects = props => {
         name: d.gsx$title.$t,
         link: d.gsx$link.$t,
         img: d.gsx$image.$t,
+        repo: d.gsx$repo.$t,
+        desc: d.gsx$description.$t,
         key: i
       };
       return project;
@@ -27,13 +29,18 @@ const Projects = props => {
     cards &&
     cards.map((d, i) => {
       return (
-        <div>
+        <div className="projectSlide">
           <img src={d.img} />
           <p className="legend">
-            this
+            {d.desc}
             <h4>
               <a target="_blank" rel="noopener noreferrer" href={d.link}>
-                {d.name}
+                Live Site
+              </a>
+            </h4>
+            <h4>
+              <a target="_blank" rel="noopener noreferrer" href={d.repo}>
+                GitHub Repo
               </a>
             </h4>
           </p>
