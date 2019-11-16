@@ -202,6 +202,22 @@ h3 {
   align-items: flex-start;
 }
 
+.carousel.carousel-slider {
+  margin: 0 auto;
+}
+
+ul.control-dots {
+  padding: 0;
+}
+
+ul.thumbs.animated {
+  padding: 10px;
+}
+
+li.thumb {
+  margin: 6px;
+}
+
 .project {
   background-color: rgb(186, 179, 179);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

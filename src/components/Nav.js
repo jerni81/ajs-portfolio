@@ -10,7 +10,7 @@ const Nav = props => {
         to="bio"
         spy={true}
         smooth={true}
-        duration= {500}
+        duration={500}
       >
         <div id="navBio">Bio</div>
       </Link>
@@ -20,7 +20,7 @@ const Nav = props => {
         to="projects"
         spy={true}
         smooth={true}
-        duration= {500}
+        duration={500}
       >
         <div id="navProjects">Projects</div>
       </Link>
@@ -30,7 +30,7 @@ const Nav = props => {
         to="contact"
         spy={true}
         smooth={true}
-        duration= {500}
+        duration={500}
       >
         <div id="navContact">Contact</div>
       </Link>
