@@ -1,10 +1,12 @@
 import React, { useState, useEffect} from "react";
 import axios from 'axios';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 
 
 const Projects = props => {
-  const [cards, setCards] = useState()
+  const [cards, setCards] = useState('')
 
   const getProjects = async() => {
     const drive = '1dtenl7Cc9R_UcKxnYvCeOFT9IaOwFw46JcxnquZYR_k'
@@ -23,22 +25,27 @@ const Projects = props => {
 
 const display = cards && cards.map((d,i) => {
   return (
-    <div className="project" key={i}>
-    <h4><a target="_blank" rel="noopener noreferrer" href={d.link}>{d.name}</a></h4>
-    <img src={d.img} alt={d.name} className='projectPic'/>
+    <div>
+      <img src={d.img} />
+      <p className="legend">this<h4><a target="_blank" rel="noopener noreferrer" href={d.link}>{d.name}</a></h4>
+</p>
     </div>
   )
 })
 
   useEffect(()=>{
+    if (cards === '') {
       getProjects();
+    }
   })
 
   return (
     <div className="projects">
       <h1><u>Projects</u></h1>
       <div className='projectWrapper'>
-        {display}
+        <Carousel autoPlay width="40vw" infiniteLoop>
+          {display}
+        </Carousel>
       </div>
     </div>
   );
