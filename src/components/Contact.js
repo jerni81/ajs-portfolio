@@ -33,7 +33,7 @@ const Contact = props => {
       <h1>
         <u>Contact</u>
       </h1>
-      <form onSubmit={sendData}>
+      <form onSubmit={()=>sendData()}>
         <p>Have a question or want to work together?</p>
         <input
           name="name"

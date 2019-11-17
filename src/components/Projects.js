@@ -29,9 +29,9 @@ const Projects = props => {
     cards &&
     cards.map((d, i) => {
       return (
-        <div className="projectSlide">
-          <img src={d.img} />
-          <p className="legend">
+        <div className="projectSlide" key={i}>
+          <img src={d.img} alt={i}/>
+          <div className="legend">
             {d.desc}
             <h4>
               <a target="_blank" rel="noopener noreferrer" href={d.link}>
@@ -43,7 +43,7 @@ const Projects = props => {
                 GitHub Repo
               </a>
             </h4>
-          </p>
+          </div>
         </div>
       );
     });
