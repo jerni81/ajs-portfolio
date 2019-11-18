@@ -299,32 +299,18 @@ input {
 
 
 @media only screen and (max-width: 1024px) {
-  .project {
-    height: 260px;
-    width: 215px;
-  }
 
-  .projectPic {
-    height: 170px;
-    width: 207px;
-  }
 }
 
 @media only screen and (max-width: 768px) {
-  .project {
-    height: 220px;
-    width: 180px;
-  }
 
-  .projectPic {
-    height: 140px;
-    width: 160px;
-  }
 }
 
 @media only screen and (max-width: 565px) {
-  .projects {
-    height: 250vh;
+
+  .intro {
+    background-image: url('https://i.imgur.com/8jRpW4g.jpg');
+    background-attachment: scroll;
   }
 
   .projectWrapper {
@@ -332,29 +318,21 @@ input {
     height: inherit;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
-  .project {
-    height: 75vh;
-    width: 85vw;
+  .carousel.carousel-slider {
+    width: 80vw;
   }
 
-  .projectPic {
-    height: 55vh;
-    width: 75vw;
+  ul.thumbs.animated {
+    display: none;
   }
+
 }
 
 @media only screen and (max-width: 425px) {
-  .intro {
-    background-image: url('https://i.imgur.com/8jRpW4g.jpg');
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
   .nav {
     display: flex;
@@ -362,6 +340,7 @@ input {
     justify-content: center;
     align-items: center;
   }
+
 
   #navBio {
     display: none;

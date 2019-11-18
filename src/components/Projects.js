@@ -60,7 +60,7 @@ const Projects = props => {
         <u>Projects</u>
       </h1>
       <div className="projectWrapper">
-        <Carousel autoPlay width="40vw" infiniteLoop>
+        <Carousel autoPlay infiniteLoop>
           {display}
         </Carousel>
       </div>
