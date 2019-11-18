@@ -313,6 +313,10 @@ input {
     background-attachment: scroll;
   }
 
+  #name {
+    margin-bottom: 0;
+  }
+
   .projectWrapper {
     width: 95vw;
     height: inherit;
@@ -328,6 +332,14 @@ input {
 
   ul.thumbs.animated {
     display: none;
+  }
+
+  .shwStatement {
+    font-size: 17px;
+  }
+
+  .schoolList {
+    text-align: center;
   }
 
 }

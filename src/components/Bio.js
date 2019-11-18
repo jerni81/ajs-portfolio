@@ -39,7 +39,7 @@ const Bio = props => {
               <ul>
                 <li>Git</li>
                 <li>SQL</li>
-                <li>Ruby on Rails</li>
+                <li>Ruby</li>
                 <li>CSS</li>
               </ul>
             </div>
