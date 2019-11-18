@@ -306,7 +306,7 @@ input {
 
 }
 
-@media only screen and (max-width: 565px) {
+@media only screen and (max-width: 800px) {
 
   .intro {
     background-image: url('https://i.imgur.com/8jRpW4g.jpg');
@@ -342,20 +342,22 @@ input {
     text-align: center;
   }
 
-  .contact {
-    margin-bottom: -20vh;
+  .contact h1 {
+    margin-bottom: 10vh;
   }
 
   form {
+    width: 80vw;
     height: 50vh;
   }
 
-  #message {
-    height: 100px;
+  input {
+    width: 60vw;
   }
 
-  #submit {
-    height: 50px;
+  #message {
+    width: 60vw;
+    height: 300px;
   }
 
 }
@@ -369,13 +371,16 @@ input {
     align-items: center;
   }
 
-
   #navBio {
     display: none;
   }
 
   #navProjects {
     display: none;
+  }
+
+  .contact {
+    margin-bottom: -20;
   }
 
   input {
@@ -385,6 +390,14 @@ input {
   #message {
     width: 80vw;
     height: 60px;
+  }
+
+  #message {
+    height: 100px;
+  }
+
+  #submit {
+    height: 50px;
   }
 
   .bio {
