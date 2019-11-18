@@ -335,11 +335,23 @@ input {
   }
 
   .shwStatement {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .schoolList {
     text-align: center;
+  }
+
+  form {
+    height: 60vh;
+  }
+
+  #message {
+    height: 100px;
+  }
+
+  #submit {
+    height: 50px;
   }
 
 }
