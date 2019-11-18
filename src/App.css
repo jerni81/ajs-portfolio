@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Knewave&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Calistoga&display=swap");
 
 .app {
   display: flex;
@@ -19,7 +19,7 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: rgb(186, 179, 179);
   height: 10vh;
-  font-family: 'Knewave', cursive;
+  font-family: 'Calistoga', cursive;
 }
 
 .link {
@@ -45,6 +45,7 @@
 
 #name {
   margin-bottom: 35vh;
+  font-size: 300%;
 }
 
 .title {
@@ -64,7 +65,7 @@
 }
 
 h1 {
-  font-family: 'Knewave', cursive;
+  font-family: 'Calistoga', cursive;
 }
 
 h3 {
@@ -80,8 +81,8 @@ h3 {
 }
 
 .statement {
-  height: 100px;
-  width: 100px;
+  height: 25vh;
+  width: 20vw;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -91,9 +92,9 @@ h3 {
 }
 
 .shwStatement {
+  font-size: 18px;
   height: 50vh;
   width: 70vw;
-  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,8 +111,8 @@ h3 {
 }
 
 .tech {
-  height: 100px;
-  width: 100px;
+  height: 25vh;
+  width: 20vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,9 +121,9 @@ h3 {
 }
 
 .shwTech {
+  font-size: 18px;
   height: 50vh;
   width: 70vw;
-  background-color: blue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,8 +147,8 @@ h3 {
 }
 
 .school {
-  height: 100px;
-  width: 100px;
+  height: 25vh;
+  width: 20vw;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -156,9 +157,9 @@ h3 {
 }
 
 .shwSchool {
+  font-size: 18px;
   height: 50vh;
   width: 70vw;
-  background-color: green;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -347,6 +348,10 @@ input {
 }
 
 @media only screen and (max-width: 425px) {
+  .intro {
+    background-size: auto;
+  }
+
   .nav {
     display: flex;
     flex-direction: column-reverse;
