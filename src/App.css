@@ -342,6 +342,10 @@ input {
     text-align: center;
   }
 
+  .contact {
+    margin-bottom: -20vh;
+  }
+
   form {
     height: 50vh;
   }
