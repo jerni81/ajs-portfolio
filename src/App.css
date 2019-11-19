@@ -117,6 +117,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: rgb(186, 179, 179);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -153,6 +154,7 @@ h3 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  text-align: center;
   background-color: rgb(186, 179, 179);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -300,15 +302,6 @@ input {
   font-family: 'Knewave', cursive;
 }
 
-
-@media only screen and (max-width: 1024px) {
-
-}
-
-@media only screen and (max-width: 768px) {
-
-}
-
 @media only screen and (max-width: 800px) {
 
   .intro {
@@ -366,6 +359,14 @@ input {
   #message {
     width: 60vw;
     height: 300px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .projectWrapper div {
+    width: 80vw;
   }
 
 }
@@ -439,6 +440,10 @@ input {
 
   .shwSchool {
     z-index: 1;
+  }
+
+  .projectWrapper div {
+    width: 90vw;
   }
 
 }
