@@ -339,12 +339,12 @@ input {
   }
 
   .contact h1 {
-    margin-bottom: 10vh;
+    margin: 0;
   }
 
   form {
     width: 80vw;
-    height: 50vh;
+    height: 65vh;
   }
 
   form p {
@@ -365,13 +365,24 @@ input {
 
 @media only screen and (max-width: 768px) {
 
-  .projectWrapper div {
-    width: 80vw;
+  .projects h1 {
+    margin: 0;
   }
+
+  .projectWrapper div {
+    margin-top: 0;
+    padding-top: 0;
+    width: 50vw;
+  }
+
+  input {
+    width: 60vw;
+  }
+
 
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
 
   .nav {
     display: flex;
