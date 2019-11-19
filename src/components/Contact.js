@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import axios from "axios";
+// import axios from "axios";
 
 const useInput = initialState => {
   const [state, _setState] = useState(initialState);
@@ -17,27 +17,30 @@ const Contact = props => {
   const [email, setEmail] = useInput("");
   const [message, setMessage] = useInput("");
 
-  let sendData = () => {
-    axios
-      .post("/", {
-        name,
-        email,
-        message
-      })
-      .then(res => console.log("Data send", { name, email, message }))
-      .catch(err => console.log(err.data));
-  };
+  // let sendData = () => {
+  //   axios
+  //     .post("/", {
+  //       name,
+  //       email,
+  //       message
+  //     })
+  //     .then(res => console.log("Data send", { name, email, message }))
+  //     .catch(err => console.log(err.data));
+  // };
 
   return (
     <div className="contact">
       <h1>
         <u>Contact</u>
       </h1>
-      <form onSubmit={()=>sendData()}>
+
+      <form action="https://formspree.io/ajjernigan87@gmail.com"
+      method="POST">
         <p>Have a question or want to work together?</p>
         <input
           name="name"
           type="text"
+          id="name"
           placeholder="name"
           onChange={setName}
           value={name}
@@ -45,6 +48,7 @@ const Contact = props => {
         <input
           name="email"
           type="email"
+          id="email"
           placeholder="email"
           onChange={setEmail}
           value={email}
@@ -60,6 +64,7 @@ const Contact = props => {
           value={message}
         ></textarea>
         <input name="submit" type="submit" id="submit" />
+        <input type="hidden" name="_next" value="https://ajjernigan.com"/>
       </form>
     </div>
   );

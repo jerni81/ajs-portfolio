@@ -43,7 +43,7 @@
   background-size: cover;
 }
 
-#name {
+#nme {
   margin-bottom: 35vh;
   font-size: 300%;
 }
@@ -313,7 +313,7 @@ input {
     background-attachment: scroll;
   }
 
-  #name {
+  #nme {
     margin-bottom: 0;
   }
 
@@ -351,8 +351,13 @@ input {
     height: 50vh;
   }
 
+  form p {
+    text-align: center;
+  }
+
   input {
     width: 60vw;
+    margin: 0 0 10px 0;
   }
 
   #message {
