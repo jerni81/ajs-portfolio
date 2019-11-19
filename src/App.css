@@ -66,6 +66,7 @@
 
 h1 {
   font-family: 'Calistoga', cursive;
+  z-index: 1;
 }
 
 h3 {
@@ -203,6 +204,10 @@ h3 {
   align-items: center;
 }
 
+.projectWrapper div {
+  width: 50vw;
+}
+
 .carousel.carousel-slider {
   margin: 0 auto;
 }
@@ -212,9 +217,7 @@ ul.control-dots {
 }
 
 ul.thumbs.animated {
-  padding: 0;
-  margin: 0 auto;
-  text-align: center;
+display: none;
 }
 
 li.thumb {
